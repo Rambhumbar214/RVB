@@ -1,0 +1,48 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1B5E20;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('../images/hero_bg.jpg') center/cover no-repeat;
+}
+
+.hero-overlay {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+}
+
+/* Service Cards */
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.service-card i {
+    font-size: 40px;
+    color: #1B5E20;
+    margin-bottom: 15px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+.footer {
+    background: #1B5E20;
+    color: white;
+    padding: 15px;
+}

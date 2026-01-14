@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crop Information | RVB</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Farmer CSS -->
+    <link rel="stylesheet" href="../assets/css/farmer.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-warning" href="farmer_dashboard.html">
+            🌾 Rural Vikas Bharat
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item me-3"><span class="nav-link fw-bold">Welcome, Farmer</span></li>
+                <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle btn btn-warning text-white" href="#" id="languageDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Language</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeLanguage('hi')">Hindi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="btn btn-outline-warning" href="../index.html">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- Crop Info -->
+<div class="container my-5">
+    <h3 class="text-center mb-4 fw-bold">Crop Information</h3>
+
+    <div class="accordion" id="cropAccordion">
+
+        <!-- Rice -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#rice">
+                    🌾 Rice
+                </button>
+            </h2>
+            <div id="rice" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    <ul>
+                        <li><b>Climate:</b> Warm & humid</li>
+                        <li><b>Soil:</b> Clayey or loamy</li>
+                        <li><b>Sowing Time:</b> June–July</li>
+                        <li><b>Fertilizer:</b> Nitrogen rich</li>
+                        <li><b>Water:</b> High water requirement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wheat -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#wheat">
+                    🌾 Wheat
+                </button>
+            </h2>
+            <div id="wheat" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul>
+                        <li><b>Climate:</b> Cool</li>
+                        <li><b>Soil:</b> Well-drained loam</li>
+                        <li><b>Sowing Time:</b> Oct–Nov</li>
+                        <li><b>Fertilizer:</b> Balanced NPK</li>
+                        <li><b>Water:</b> Moderate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cotton -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#cotton">
+                    🌾 Cotton
+                </button>
+            </h2>
+            <div id="cotton" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul>
+                        <li><b>Climate:</b> Warm</li>
+                        <li><b>Soil:</b> Black soil</li>
+                        <li><b>Sowing Time:</b> April–May</li>
+                        <li><b>Fertilizer:</b> Nitrogen & Potassium</li>
+                        <li><b>Water:</b> Medium</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sugarcane -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sugarcane">
+                    🌾 Sugarcane
+                </button>
+            </h2>
+            <div id="sugarcane" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul>
+                        <li><b>Climate:</b> Tropical</li>
+                        <li><b>Soil:</b> Deep fertile soil</li>
+                        <li><b>Sowing Time:</b> Feb–Mar</li>
+                        <li><b>Fertilizer:</b> High NPK</li>
+                        <li><b>Water:</b> Very high</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer text-center">
+    <p class="mb-0">© Rural Vikas Bharat | Crop Advisory</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/language.js"></script>
+
+</body>
+</html>
+
+
+<link rel="stylesheet" href="../assets/css/farmer.css">

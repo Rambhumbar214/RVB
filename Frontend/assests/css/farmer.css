@@ -1,0 +1,148 @@
+body {
+    background: #f4f9f4;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+    background-color: #2E7D32;
+}
+
+.card-header {
+    background-color: #2E7D32;
+    color: white;
+}
+
+.btn-success {
+    background-color: #2E7D32;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #1B5E20;
+}
+
+.footer {
+    background: #2E7D32;
+    color: white;
+    padding: 12px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    color: #2E7D32;
+}
+
+.dashboard-card i {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-10px);
+    background: #E8F5E9;
+}
+
+.navbar .dropdown-toggle {
+    background-color: #FF9800; /* Orange */
+    color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+
+.navbar .dropdown-toggle:hover {
+    background-color: #F57C00; /* Darker Orange */
+    color: white;
+}
+
+.dropdown-menu {
+    min-width: 100px;
+    border-radius: 8px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar .btn-warning {
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+
+.navbar .btn-warning:hover {
+    background-color: #F57C00;
+    color: white;
+}
+
+.navbar .btn-outline-warning {
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.navbar .btn-outline-warning:hover {
+    background-color: #FF9800;
+    color: white;
+}
+
+.dropdown-menu {
+    border-radius: 8px;
+    min-width: 100px;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Navbar styling */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+.navbar .btn-warning {
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+.navbar .btn-warning:hover {
+    background-color: #F57C00;
+    color: white;
+}
+.navbar .btn-outline-warning {
+    border-radius: 8px;
+    font-weight: bold;
+}
+.navbar .btn-outline-warning:hover {
+    background-color: #FF9800;
+    color: white;
+}
+.dropdown-menu {
+    border-radius: 8px;
+    min-width: 100px;
+}
+
+/* Card & Table Styling */
+.card {
+    border-radius: 12px;
+}
+.table {
+    background-color: white;
+}
+
+/* Footer */
+.footer {
+    background: #FF9800;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px){
+    .navbar .nav-link, .navbar .btn {
+        padding: 4px 8px;
+    }
+}
+

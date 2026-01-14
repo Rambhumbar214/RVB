@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Government Dashboard | RVB</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Govt CSS -->
+    <link rel="stylesheet" href="../assets/css/govt.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            🏛 Rural Vikas Bharat
+        </a>
+
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Welcome, Officer</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-light ms-2" href="../index.html">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Dashboard Content -->
+<div class="container my-5">
+    <h3 class="text-center mb-4 fw-bold">Policy Impact Simulation</h3>
+
+    <div class="row g-4">
+
+        <!-- Farmer Registered -->
+        <div class="col-md-3">
+            <div class="card text-center shadow-lg p-3">
+                <i class="fa-solid fa-users fa-3x text-warning mb-2"></i>
+                <h5>Farmers Registered</h5>
+                <h3>1,250</h3>
+            </div>
+        </div>
+
+        <!-- Schemes Active -->
+        <div class="col-md-3">
+            <div class="card text-center shadow-lg p-3">
+                <i class="fa-solid fa-landmark fa-3x text-warning mb-2"></i>
+                <h5>Schemes Active</h5>
+                <h3>12</h3>
+            </div>
+        </div>
+
+        <!-- Crop Beneficiaries -->
+        <div class="col-md-3">
+            <div class="card text-center shadow-lg p-3">
+                <i class="fa-solid fa-seedling fa-3x text-warning mb-2"></i>
+                <h5>Crop Beneficiaries</h5>
+                <h3>890</h3>
+            </div>
+        </div>
+
+        <!-- Total Budget Spent -->
+        <div class="col-md-3">
+            <div class="card text-center shadow-lg p-3">
+                <i class="fa-solid fa-indian-rupee-sign fa-3x text-warning mb-2"></i>
+                <h5>Total Budget Spent</h5>
+                <h3>₹45L</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chart Section -->
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <div class="card shadow-lg p-3">
+                <h5 class="text-center mb-4">Scheme Impact Overview</h5>
+                <canvas id="policyChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer class="footer text-center">
+    <p class="mb-0">© Rural Vikas Bharat | Government Dashboard</p>
+</footer>
+
+<script>
+const ctx = document.getElementById('policyChart').getContext('2d');
+const policyChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Scheme 1','Scheme 2','Scheme 3','Scheme 4','Scheme 5'],
+        datasets: [{
+            label: 'Number of Farmers Benefited',
+            data: [300, 250, 200, 150, 100],
+            backgroundColor: '#FF9800'
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: { display: false },
+            title: {
+                display: true,
+                text: 'Policy Impact Analytics'
+            }
+        }
+    }
+});
+</script>
+
+</body>
+</html>

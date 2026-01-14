@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Information | RVB</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Farmer CSS -->
+    <link rel="stylesheet" href="../assets/css/farmer.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-warning" href="farmer_dashboard.html">
+            🌾 Rural Vikas Bharat
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item me-3"><span class="nav-link fw-bold">Welcome, Farmer</span></li>
+                <li class="nav-item dropdown me-3">
+                    <a class="nav-link dropdown-toggle btn btn-warning text-white" href="#" id="languageDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Language</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeLanguage('hi')">Hindi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="btn btn-outline-warning" href="../index.html">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- Weather Section -->
+<div class="container my-5">
+    <h3 class="text-center mb-4 fw-bold">Weather Information</h3>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <div class="card shadow-lg">
+                <div class="card-header text-center">
+                    <h5>
+                        <i class="fa-solid fa-cloud-sun"></i> Today's Weather
+                    </h5>
+                </div>
+
+                <div class="card-body text-center">
+
+                    <!-- Dummy Weather Data -->
+                    <h4 class="mb-3">📍 District: Pune</h4>
+
+                    <p><b>Temperature:</b> 32°C</p>
+                    <p><b>Humidity:</b> 65%</p>
+                    <p><b>Rainfall:</b> Light Rain</p>
+                    <p><b>Wind Speed:</b> 12 km/h</p>
+
+                    <div class="alert alert-warning mt-4">
+                        ⚠️ Weather Alert: Possibility of rain in next 24 hours.
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<footer class="footer text-center">
+    <p class="mb-0">© Rural Vikas Bharat | Weather Advisory</p>
+</footer>
+<script src="../assets/js/language.js"></script>
+
+</body>
+</html>
+
+
+<link rel="stylesheet" href="../assets/css/farmer.css">

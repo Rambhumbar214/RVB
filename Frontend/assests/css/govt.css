@@ -1,0 +1,28 @@
+body {
+    background: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+    background-color: #FF9800;
+}
+
+.card-header {
+    background-color: #FF9800;
+    color: white;
+}
+
+.btn-warning {
+    background-color: #FF9800;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #F57C00;
+}
+
+.footer {
+    background: #FF9800;
+    color: white;
+    padding: 12px;
+}
